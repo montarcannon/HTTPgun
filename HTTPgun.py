@@ -13,18 +13,24 @@ import urllib.request
 print ('If you dont know how to use this script.');
 print ('Check GitHub readme https://github.com/montarcannon/mcrepo branch httpgun');
 print ('');
-args = sys.argv;
-shooted1 = str(args[1]);
-shooted2 = str(args[2]);
-wordaddr = str(args[3]);
-outfile = str(args[4]);
-printout = int(args[5]);
-saveout = int(args[6]);
-endurl = int(args[7]);
-
-
+try:
+    args = sys.argv;
+    shooted1 = str(args[1]);
+    shooted2 = str(args[2]);
+    wordaddr = str(args[3]);
+    outfile = str(args[4]);
+    printout = int(args[5]);
+    saveout = int(args[6]);
+    endurl = int(args[7]);
+except:
+    print('something missing for example parameter');
+    exit();
 outfileread = open(outfile, 'w');
-wordlist = open (wordaddr, 'r');
+try:
+    wordlist = open (wordaddr, 'r');
+except:
+    print('specifid wordlist does not exsist or python cant read it');
+    exit();
 words = wordlist.readlines();
 
 #print(words);
