@@ -6,4 +6,4 @@ syntax (all params are required. to avoid errors num means any number except zer
 
 
 **if you want support me donate my bitcoin wallet:
-bc1qcvcfl2ca8amh38ealt8dpmkpqre3t2nlvgdntx**
+12VqAGqkyTMtffjPn4LLQfEBrjQUiaby5p**
